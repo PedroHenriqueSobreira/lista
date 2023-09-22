@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+    int ano;
+    int anosOlimpicos[] = { 1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932,1936, 1948, 1952, 1956, 1960, 1965, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016, 2020}
+    int anosCopasmundo[] = {1930, 1934, 1938, 1950, 1954, 1958, 1962, 1962, 1966, 1970, 1974, 1978, 1982, 1986, 1990, 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2022}
+
+    printf("Digite um ano para verificar se ocorreram eventos esportivos: ");
+    scanf("%d", &ano);
+
+    int ocorreuOlimpiada = 0;
+    int ocorreucopamundo = 0;
+
+    for (int i = 0; i < sizeof(anosOlimpicos) / sizeof(anosOlimpicos[0]); i++){
+        if (ano == anosOlimpicos[i]){
+            ocorreuOlimpiada = 1;
+            break;
+        }
+    }
+    
+    if (ocorreucopamundo){
+        print("A copa do mundo de futebol ocorreu em %d.\n", ano);
+    }else{
+        printf("A copa do mundo de futebol NÃO ocorreu em %d.\n,ano");
+    }
+
+    return 0
+}
