@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+    int senhaCadastro, senhaDigitada;
+    scanf("%d", &senhaCadastro);
+    printf("senha cadastrada: %04d\n", senhaCadastro);
+
+    while (1){
+        scanf("%d", &senhaDigitada);
+
+        if (senhaDigitada == senhaCadastro){
+            printf("senha valida!\n");
+            break;
+
+        } else {
+            printf("senha invalida!\n");
+
+        }
+    }
+    return 0
+}
