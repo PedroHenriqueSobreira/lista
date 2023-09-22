@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    int A,B;
+
+    scanf("%d",&A);
+    scanf("%d",&B);
+
+    if(A==B){
+        printf("Os valores lidos são iguais\n");
+    }else{
+        int maior = (A>B)? A:B;
+
+        int menor = (A<B)? A:B;
+
+    if(maior % menor == 0){
+        printf("o maior valor e %d e e multiplo do menor valor.\n", maior);
+    }else{
+        printf("o maior valor e %d e nao e multiplo do menor valor.\n, maior");
+    }    
+    }
+
+    return 0;
+}
