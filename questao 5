@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int somaDigitos(int numero){
+    int soma = 0;
+    while (numero > 0){
+        int digito = numero % 10;
+        soma += digito;
+        numero/=10
+    }
+
+    return soma;
+}
+int main(){
+    int numero;
+    printf("Digite um numero inteiro positivo:");
+    scanf("%d",&numero);
+
+if (numero % 2 == 0){
+    printf("O numero e par\n");
+}else{
+    printf("O numero e impar\n");
+}
+
+int resultado = somaDigitos(numero);
+    printf("A soma dos digitos do numero e: %d\n", resultado);
+
+
+
+return 0;
+}
