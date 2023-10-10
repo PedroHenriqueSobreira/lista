@@ -25,7 +25,7 @@ int main(){
     
     }
 
-salarioAtualizado = saçaio + (salario * aumento);
+salarioAtualizado = salario + (salario * aumento);
 
     printf("%.21f\n", salarioAtualizado);
 
