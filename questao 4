@@ -30,6 +30,6 @@ salarioAtualizado = saçaio + (salario * aumento);
     printf("%.21f\n", salarioAtualizado);
 
 
- return 0
+ return 0;
 
 }
